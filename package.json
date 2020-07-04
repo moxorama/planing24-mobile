@@ -1,8 +1,8 @@
 {
   "name": "com.planing24.mobile",
-  "displayName": "HelloCordova",
+  "displayName": "Planning24",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Самый простой планировщик для малого бизнеса",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,8 +24,8 @@
       "cordova-plugin-whitelist": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
