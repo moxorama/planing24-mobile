@@ -10,8 +10,8 @@ var app = {
         app.receivedEvent('deviceready');
         
         // Here, we redirect to the web site.
-        //var targetUrl = "http://netlify.ru/";
-        //window.location.replace(targetUrl);
+        var targetUrl = "http://netlify.ru/";
+        window.location.replace(targetUrl);
     },
     // Note: This code is taken from the Cordova CLI template.
     receivedEvent: function(id) {

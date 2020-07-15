@@ -1,0 +1,77 @@
+{
+  "_from": "git+https://github.com/amirhmoradi/cordova-plugin-jsinjection.git",
+  "_id": "cordova-plugin-jsinjection@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-jsinjection",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/amirhmoradi/cordova-plugin-jsinjection",
+    "rawSpec": "https://github.com/amirhmoradi/cordova-plugin-jsinjection",
+    "saveSpec": "git+https://github.com/amirhmoradi/cordova-plugin-jsinjection.git",
+    "fetchSpec": "https://github.com/amirhmoradi/cordova-plugin-jsinjection.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/amirhmoradi/cordova-plugin-jsinjection.git#43ddb804ecd3eb40f5c4c942f4a910228bde684a",
+  "_spec": "https://github.com/amirhmoradi/cordova-plugin-jsinjection",
+  "_where": "/Users/Wizeman/Projects/Sansara/Planing24",
+  "author": {
+    "name": "Amir Moradi"
+  },
+  "bugs": {
+    "url": "https://github.com/amirhmoradi/cordova-plugin-jsinjection/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-jsinjection",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Js Injection Plugin",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/amirhmoradi/cordova-plugin-jsinjection#readme",
+  "keywords": [
+    "cordova",
+    "jsinjection",
+    "ecosystem:cordova",
+    "hosted",
+    "web",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-jsinjection",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhmoradi/cordova-plugin-jsinjection.git"
+  },
+  "scripts": {
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests",
+    "test": "npm run eslint"
+  },
+  "version": "1.0.0"
+}

@@ -15,7 +15,20 @@
     },
     "cordova-plugin-contacts-phonenumbers": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-remote-injection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-jsinjection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    }
+  }
 }

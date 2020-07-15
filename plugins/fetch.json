@@ -22,5 +22,37 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-remote-injection": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-remote-injection"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-jsinjection": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/amirhmoradi/cordova-plugin-jsinjection"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-network-information": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-network-information@>=1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-wkwebview-engine": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-wkwebview-engine@>=1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
   }
 }

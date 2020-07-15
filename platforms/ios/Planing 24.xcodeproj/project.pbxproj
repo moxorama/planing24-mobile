@@ -17,6 +17,19 @@
 		1EBD4E44DDA842718FE7CF7F /* CDVContactsPhoneNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA146BA34754BF5AAB847BF /* CDVContactsPhoneNumbers.m */; };
 		7A84F2A134FD4E27BD176016 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07A5C1FEC6E438F9DF8412A /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E0E475096242C5B5DF088E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D366A7F8DD0435E9DD2AB62 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		455C06DCE6DE4EDB96D0BCD4 /* CDVRemoteInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7184CA0D0E42499694575270 /* CDVRemoteInjection.m */; };
+		2389765E0C5D4E2A886ADF6A /* CDVRemoteInjectionWebViewBaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068CD72037E54D8ABD14AB6B /* CDVRemoteInjectionWebViewBaseDelegate.m */; };
+		7C61A7EECD294D17A41DBAEC /* CDVRemoteInjectionUIWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEA6B43114D8FA166213A /* CDVRemoteInjectionUIWebViewDelegate.m */; };
+		B19C87CB365041B3BF73BF47 /* CDVRemoteInjectionWKWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD790230662148299117341A /* CDVRemoteInjectionWKWebViewDelegate.m */; };
+		55CCACCD0AD14EFC87CBDDF2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0C18AB429948358BAD0725 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3E1C3B62934B43E1AEF87D9D /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE7D29C6024EC28AC44A72 /* CDVConnection.m */; };
+		1141CCBCA91742D8AD7D2429 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23D364D7934D1CBC1749FA /* CDVReachability.m */; };
+		ABE240DC753B4867BD48D5BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0F9A551E29432FB6B153BD /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5477B09D7B5B4A52BF38D7EA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4DFEFC8A0B4A329DA581DD /* CoreTelephony.framework */; };
+		6C7B2BB55AF5470193A639D5 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BA4ECCEF54053B01FA731 /* CDVWKWebViewEngine.m */; };
+		BB78B22F10A94C32A2A01729 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 401EEB78E6E84816B139A29E /* CDVWKWebViewUIDelegate.m */; };
+		A06ED29FBBF544A996AB670F /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C14C9E8804BE5B067FDC7 /* CDVWKProcessPoolFactory.m */; };
+		C8F92908964E489F81E083F3 /* CDVJsInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC3996387CE426E8C67F7FA /* CDVJsInjection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +81,29 @@
 		F4821E632BF8465383174D87 /* CDVContactsPhoneNumbers.h */ = {isa = PBXFileReference; name = "CDVContactsPhoneNumbers.h"; path = "cordova-plugin-contacts-phonenumbers/CDVContactsPhoneNumbers.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		A07A5C1FEC6E438F9DF8412A /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		7D366A7F8DD0435E9DD2AB62 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7184CA0D0E42499694575270 /* CDVRemoteInjection.m */ = {isa = PBXFileReference; name = "CDVRemoteInjection.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjection.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		068CD72037E54D8ABD14AB6B /* CDVRemoteInjectionWebViewBaseDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWebViewBaseDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWebViewBaseDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7D0AEA6B43114D8FA166213A /* CDVRemoteInjectionUIWebViewDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionUIWebViewDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionUIWebViewDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AD790230662148299117341A /* CDVRemoteInjectionWKWebViewDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWKWebViewDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWKWebViewDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A629587B9105433C84406238 /* CDVRemoteInjection.h */ = {isa = PBXFileReference; name = "CDVRemoteInjection.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8F9CD752CBEF4BBDA0181711 /* CDVRemoteInjectionWebViewBaseDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWebViewBaseDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWebViewBaseDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A794518A80044AEF802A2B11 /* CDVRemoteInjectionUIWebViewDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionUIWebViewDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionUIWebViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4172FE7C3164445AA2242823 /* CDVRemoteInjectionWKWebViewDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWKWebViewDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWKWebViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4F0C18AB429948358BAD0725 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		65DE7D29C6024EC28AC44A72 /* CDVConnection.m */ = {isa = PBXFileReference; name = "CDVConnection.m"; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5B23D364D7934D1CBC1749FA /* CDVReachability.m */ = {isa = PBXFileReference; name = "CDVReachability.m"; path = "cordova-plugin-network-information/CDVReachability.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		83DAEF687044439885282A1E /* CDVConnection.h */ = {isa = PBXFileReference; name = "CDVConnection.h"; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		59C3900A238E4582B819BF6A /* CDVReachability.h */ = {isa = PBXFileReference; name = "CDVReachability.h"; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2C0F9A551E29432FB6B153BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		3E4DFEFC8A0B4A329DA581DD /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0D6BA4ECCEF54053B01FA731 /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; name = "CDVWKWebViewEngine.m"; path = "cordova-plugin-wkwebview-engine/CDVWKWebViewEngine.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		401EEB78E6E84816B139A29E /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKWebViewUIDelegate.m"; path = "cordova-plugin-wkwebview-engine/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1E9C14C9E8804BE5B067FDC7 /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; name = "CDVWKProcessPoolFactory.m"; path = "cordova-plugin-wkwebview-engine/CDVWKProcessPoolFactory.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6AC17C83C1174890A1A61380 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; name = "CDVWKWebViewEngine.h"; path = "cordova-plugin-wkwebview-engine/CDVWKWebViewEngine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8E2BCD1D02F647B3BC356037 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKWebViewUIDelegate.h"; path = "cordova-plugin-wkwebview-engine/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		278AADB8A8494AF0921EA1AA /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; name = "CDVWKProcessPoolFactory.h"; path = "cordova-plugin-wkwebview-engine/CDVWKProcessPoolFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BCC3996387CE426E8C67F7FA /* CDVJsInjection.m */ = {isa = PBXFileReference; name = "CDVJsInjection.m"; path = "cordova-plugin-jsinjection/CDVJsInjection.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4B26625CB86049EDA4C764E6 /* CDVJsInjection.h */ = {isa = PBXFileReference; name = "CDVJsInjection.h"; path = "cordova-plugin-jsinjection/CDVJsInjection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +114,9 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				7A84F2A134FD4E27BD176016 /* AddressBook.framework in Frameworks */,
 				62E0E475096242C5B5DF088E /* AddressBookUI.framework in Frameworks */,
+				55CCACCD0AD14EFC87CBDDF2 /* WebKit.framework in Frameworks */,
+				ABE240DC753B4867BD48D5BA /* SystemConfiguration.framework in Frameworks */,
+				5477B09D7B5B4A52BF38D7EA /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +189,9 @@
 			children = (
 				A07A5C1FEC6E438F9DF8412A /* AddressBook.framework */,
 				7D366A7F8DD0435E9DD2AB62 /* AddressBookUI.framework */,
+				4F0C18AB429948358BAD0725 /* WebKit.framework */,
+				2C0F9A551E29432FB6B153BD /* SystemConfiguration.framework */,
+				3E4DFEFC8A0B4A329DA581DD /* CoreTelephony.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +220,26 @@
 			children = (
 				DBA146BA34754BF5AAB847BF /* CDVContactsPhoneNumbers.m */,
 				F4821E632BF8465383174D87 /* CDVContactsPhoneNumbers.h */,
+				7184CA0D0E42499694575270 /* CDVRemoteInjection.m */,
+				068CD72037E54D8ABD14AB6B /* CDVRemoteInjectionWebViewBaseDelegate.m */,
+				7D0AEA6B43114D8FA166213A /* CDVRemoteInjectionUIWebViewDelegate.m */,
+				AD790230662148299117341A /* CDVRemoteInjectionWKWebViewDelegate.m */,
+				A629587B9105433C84406238 /* CDVRemoteInjection.h */,
+				8F9CD752CBEF4BBDA0181711 /* CDVRemoteInjectionWebViewBaseDelegate.h */,
+				A794518A80044AEF802A2B11 /* CDVRemoteInjectionUIWebViewDelegate.h */,
+				4172FE7C3164445AA2242823 /* CDVRemoteInjectionWKWebViewDelegate.h */,
+				65DE7D29C6024EC28AC44A72 /* CDVConnection.m */,
+				5B23D364D7934D1CBC1749FA /* CDVReachability.m */,
+				83DAEF687044439885282A1E /* CDVConnection.h */,
+				59C3900A238E4582B819BF6A /* CDVReachability.h */,
+				0D6BA4ECCEF54053B01FA731 /* CDVWKWebViewEngine.m */,
+				401EEB78E6E84816B139A29E /* CDVWKWebViewUIDelegate.m */,
+				1E9C14C9E8804BE5B067FDC7 /* CDVWKProcessPoolFactory.m */,
+				6AC17C83C1174890A1A61380 /* CDVWKWebViewEngine.h */,
+				8E2BCD1D02F647B3BC356037 /* CDVWKWebViewUIDelegate.h */,
+				278AADB8A8494AF0921EA1AA /* CDVWKProcessPoolFactory.h */,
+				BCC3996387CE426E8C67F7FA /* CDVJsInjection.m */,
+				4B26625CB86049EDA4C764E6 /* CDVJsInjection.h */,
 			);
 			name = Plugins;
 			path = "Planing 24/Plugins";
@@ -303,6 +365,16 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				1EBD4E44DDA842718FE7CF7F /* CDVContactsPhoneNumbers.m in Sources */,
+				455C06DCE6DE4EDB96D0BCD4 /* CDVRemoteInjection.m in Sources */,
+				2389765E0C5D4E2A886ADF6A /* CDVRemoteInjectionWebViewBaseDelegate.m in Sources */,
+				7C61A7EECD294D17A41DBAEC /* CDVRemoteInjectionUIWebViewDelegate.m in Sources */,
+				B19C87CB365041B3BF73BF47 /* CDVRemoteInjectionWKWebViewDelegate.m in Sources */,
+				3E1C3B62934B43E1AEF87D9D /* CDVConnection.m in Sources */,
+				1141CCBCA91742D8AD7D2429 /* CDVReachability.m in Sources */,
+				6C7B2BB55AF5470193A639D5 /* CDVWKWebViewEngine.m in Sources */,
+				BB78B22F10A94C32A2A01729 /* CDVWKWebViewUIDelegate.m in Sources */,
+				A06ED29FBBF544A996AB670F /* CDVWKProcessPoolFactory.m in Sources */,
+				C8F92908964E489F81E083F3 /* CDVJsInjection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
