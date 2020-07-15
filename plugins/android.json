@@ -9,6 +9,12 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-browsersync-gen2": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-contacts-phonenumbers": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {}

@@ -4,16 +4,55 @@
     "uninstalled": []
   },
   "config_munge": {
-    "files": {}
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"ContactsPhoneNumbers\"><param name=\"ios-package\" value=\"CDVContactsPhoneNumbers\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "NSContactsUsageDescription": [
+            {
+              "xml": "<string>This app needs contacts access</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-browsersync-gen2": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-contacts-phonenumbers": {
+      "CONTACTS_USAGE_DESCRIPTION": "This app needs contacts access",
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "id": "cordova-plugin-contacts-phonenumbers.contactsPhoneNumbers",
+      "file": "plugins/cordova-plugin-contacts-phonenumbers/www/contactsPhoneNumbers.js",
+      "pluginId": "cordova-plugin-contacts-phonenumbers",
+      "clobbers": [
+        "navigator.contactsPhoneNumbers"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-browsersync-gen2": "1.1.7",
+    "cordova-plugin-contacts-phonenumbers": "0.0.12"
   }
 }
