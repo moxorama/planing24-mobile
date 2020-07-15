@@ -21,6 +21,9 @@
     },
     "cordova-plugin-jsinjection": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
