@@ -2,3 +2,8 @@
 node_modules/
 npm-debug.log
 yarn-error.log
+
+
+# Platform cached libraries
+platforms/ios/Pods/
+platforms/android/.gradle/

@@ -1,6 +1,6 @@
 var listContacts = function() {
     navigator.contactsPhoneNumbers.list(function(contacts) {
-        var contactsElement = document.getElementById("contacts");
+        var contactsElement = document.getElementById("content");
         contactsElement.innerHTML = '';
 
         for(var i = 0; i < contacts.length; i++) {
@@ -15,4 +15,22 @@ var listContacts = function() {
             }
         }
     });
+}
+
+var grantPushPermissions = function () {
+    FirebasePlugin.grantPermission(function(hasPermission){
+        window.alert("Permission was " + (hasPermission ? "granted" : "denied"));
+    });
+}
+
+var getPushToken = function() {
+    FirebasePlugin.getToken(function(fcmToken) {
+        var contentElement = document.getElementById("content");
+        contentElement.innerHTML = `
+            <p>Firebase push token: </p>
+            <code>${fcmToken}</code>
+        `;
+    }, function(error) {
+        console.error(error);
+    });    
 }

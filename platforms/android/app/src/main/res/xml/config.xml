@@ -15,6 +15,17 @@
         <param name="android-package" value="com.amirhmoradi.jsinjection.JsInjection" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="FirebasePlugin">
+        <param name="android-package" value="org.apache.cordova.firebase.FirebasePlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="RemoteInjection">
         <param name="android-package" value="com.truckmovers.cordova.RemoteInjectionPlugin" />
         <param name="onload" value="true" />
@@ -26,7 +37,7 @@
     <author email="support@flajok.ru" href="http://planing24.com">
 	Planing24.com
     </author>
-    <content src="browser-sync-start.html" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -39,9 +50,5 @@
         <application android:usesCleartextTraffic="true" />
     </edit-config>
     <preference name="loglevel" value="DEBUG" />
-    <allow-navigation href="*" />
-    <feature name="StatusBar">
-        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
-        <param name="onload" value="true" />
-    </feature>
+    <preference name="StatusBarOverlaysWebView" value="false" />
 </widget>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917507004055",
+    "firebase_url": "https://planing24-e92dc.firebaseio.com",
+    "project_id": "planing24-e92dc",
+    "storage_bucket": "planing24-e92dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917507004055:android:523f137c7e1143a6b97bd2",
+        "android_client_info": {
+          "package_name": "com.planing24.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917507004055-1koh69m45oam0fkublipuqt66r8v5pho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjAw_bojd2IHVZdrMBEGJ5qESAdy5Ja8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917507004055-1koh69m45oam0fkublipuqt66r8v5pho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

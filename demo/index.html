@@ -24,11 +24,17 @@
     <h1 class="title">Hello from web</h1>
   </header>
   <div class="container">
+    <button class="btn btn-block btn-primary" onClick="grantPushPermissions()">
+      Grant push permissions
+    </button>
+    <button class="btn btn-block btn-primary" onClick="getPushToken()">
+      Get Push token
+    </button>
     <button class="btn btn-block btn-primary" onClick="listContacts()">
       Display contacts
     </button>
 
-    <div id="contacts">
+    <div id="content">
 
     </div>
   </div>
