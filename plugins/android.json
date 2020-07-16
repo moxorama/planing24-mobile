@@ -50,6 +50,10 @@
     },
     "cordova-plugin-enable-multidex": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
@@ -63,6 +67,9 @@
       "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "es6-promise-plugin": {
       "PACKAGE_NAME": "com.planing24.mobile"
     }
   }
