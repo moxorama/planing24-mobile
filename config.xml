@@ -19,7 +19,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://netlify.ru" />
+    <allow-navigation href="*://planing24.com/*" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
   
     <platform name="android">
