@@ -94,6 +94,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.plugins.socialsharing"
       ]
+    },
+    {
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-audio-recorder.AudioRecorder",
+      "file": "plugins/cordova-plugin-audio-recorder/www/AudioRecorder.js",
+      "pluginId": "cordova-plugin-audio-recorder",
+      "clobbers": [
+        "navigator.device.audiorecorder"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -111,6 +127,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-firebasex": "10.1.1",
     "cordova-plugin-enable-multidex": "0.2.0",
     "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-x-socialsharing": "5.6.8"
+    "cordova-plugin-x-socialsharing": "5.6.8",
+    "cordova-plugin-qrscanner": "3.0.1",
+    "cordova-plugin-audio-recorder": "1.1.0"
   };
 });

@@ -48,6 +48,10 @@
 		EE0AEA7835838EFF1BEFD29E /* Pods_Planing_24.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2930FC5CAED6778CF25E86 /* Pods_Planing_24.framework */; };
 		EF2E2F5C24EB4BCEBBAA001E /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D295936F34C7687261F41 /* UIImage+CropScaleOrientation.m */; };
 		F2BCB68424C0B6CA00FBD181 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2BCB68324C0B6CA00FBD181 /* GoogleService-Info.plist */; };
+		802DE010CF7045B2B823ACF4 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB34388F1E64887A8D8C449 /* QRScanner.swift */; };
+		B1E5267B8161481095A514CD /* AudioRecorderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993451C5A51434FA4B37328 /* AudioRecorderPlugin.m */; };
+		9FC4780929284171AFF2115B /* AudioRecorderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81628345E3E24F71850AD022 /* AudioRecorderVC.m */; };
+		4B3066B6A7334BE380953A94 /* OSAudioRecorder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2312B609C10A4C16A861D8E8 /* OSAudioRecorder.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +157,12 @@
 		F4821E632BF8465383174D87 /* CDVContactsPhoneNumbers.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVContactsPhoneNumbers.h; path = "cordova-plugin-contacts-phonenumbers/CDVContactsPhoneNumbers.h"; sourceTree = "<group>"; };
 		F72E38424A0344A1A2412C1B /* FirebasePluginMessageReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiver.h; path = "cordova-plugin-firebasex/FirebasePluginMessageReceiver.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Planing 24/config.xml"; sourceTree = "<group>"; };
+		1EB34388F1E64887A8D8C449 /* QRScanner.swift */ = {isa = PBXFileReference; name = "QRScanner.swift"; path = "cordova-plugin-qrscanner/QRScanner.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		0993451C5A51434FA4B37328 /* AudioRecorderPlugin.m */ = {isa = PBXFileReference; name = "AudioRecorderPlugin.m"; path = "cordova-plugin-audio-recorder/AudioRecorderPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		81628345E3E24F71850AD022 /* AudioRecorderVC.m */ = {isa = PBXFileReference; name = "AudioRecorderVC.m"; path = "cordova-plugin-audio-recorder/AudioRecorderVC.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D7D534C5BC354F0DB37F5635 /* AudioRecorderPlugin.h */ = {isa = PBXFileReference; name = "AudioRecorderPlugin.h"; path = "cordova-plugin-audio-recorder/AudioRecorderPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		56B864554F2E40E892BB23E0 /* AudioRecorderVC.h */ = {isa = PBXFileReference; name = "AudioRecorderVC.h"; path = "cordova-plugin-audio-recorder/AudioRecorderVC.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2312B609C10A4C16A861D8E8 /* OSAudioRecorder.bundle */ = {isa = PBXFileReference; name = "OSAudioRecorder.bundle"; path = "OSAudioRecorder.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +247,7 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* Planing 24-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				2312B609C10A4C16A861D8E8 /* OSAudioRecorder.bundle */,
 			);
 			name = Resources;
 			path = "Planing 24/Resources";
@@ -326,6 +337,11 @@
 				DD8885116A9241EE810711A2 /* SocialSharing.m */,
 				3125387060BB41ABA1639F5B /* NSString+SSURLEncoding.h */,
 				A57D29494F4D4F0F988F6150 /* SocialSharing.h */,
+				1EB34388F1E64887A8D8C449 /* QRScanner.swift */,
+				0993451C5A51434FA4B37328 /* AudioRecorderPlugin.m */,
+				81628345E3E24F71850AD022 /* AudioRecorderVC.m */,
+				D7D534C5BC354F0DB37F5635 /* AudioRecorderPlugin.h */,
+				56B864554F2E40E892BB23E0 /* AudioRecorderVC.h */,
 			);
 			name = Plugins;
 			path = "Planing 24/Plugins";
@@ -440,6 +456,7 @@
 				F2BCB68424C0B6CA00FBD181 /* GoogleService-Info.plist in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				4B3066B6A7334BE380953A94 /* OSAudioRecorder.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +627,9 @@
 				62E38D6C5118408392EAADD6 /* FirebasePluginMessageReceiverManager.m in Sources */,
 				6AE8A0FCB16E4E4281DBD8B7 /* NSString+SSURLEncoding.m in Sources */,
 				5EEA62B6F6FB4604BAF350AD /* SocialSharing.m in Sources */,
+				802DE010CF7045B2B823ACF4 /* QRScanner.swift in Sources */,
+				B1E5267B8161481095A514CD /* AudioRecorderPlugin.m in Sources */,
+				9FC4780929284171AFF2115B /* AudioRecorderVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,10 +662,14 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Planing 24/Planing 24-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planing24.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -665,10 +689,13 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Planing 24/Planing 24-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planing24.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -707,12 +734,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planing24.mobile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -750,11 +781,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planing24.mobile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

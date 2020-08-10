@@ -39,6 +39,14 @@
             {
               "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"QRScanner\"><param name=\"android-package\" value=\"com.bitpay.cordova.qrscanner.QRScanner\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AudioRecorderPlugin\"><param name=\"android-package\" value=\"com.outsystems.audiorecorder.AudioRecorderPlugin\" /></feature>",
+              "count": 1
             }
           ],
           "/*/feature[@name='NetworkStatus']": [
@@ -62,7 +70,7 @@
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-              "count": 2
+              "count": 3
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -70,6 +78,26 @@
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" android:required=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera.front\" android:required=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
               "count": 1
             }
           ],
@@ -220,6 +248,12 @@
     "cordova-plugin-x-socialsharing": {
       "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-audio-recorder": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {},
@@ -318,6 +352,22 @@
       "clobbers": [
         "window.plugins.socialsharing"
       ]
+    },
+    {
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-audio-recorder.AudioRecorder",
+      "file": "plugins/cordova-plugin-audio-recorder/www/AudioRecorder.js",
+      "pluginId": "cordova-plugin-audio-recorder",
+      "clobbers": [
+        "navigator.device.audiorecorder"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -335,6 +385,8 @@
     "cordova-plugin-firebasex": "10.1.1",
     "cordova-plugin-enable-multidex": "0.2.0",
     "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-x-socialsharing": "5.6.8"
+    "cordova-plugin-x-socialsharing": "5.6.8",
+    "cordova-plugin-qrscanner": "3.0.1",
+    "cordova-plugin-audio-recorder": "1.1.0"
   }
 }

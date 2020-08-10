@@ -82,3 +82,17 @@ var showCamera = function () {
 
     navigator.camera.getPicture(onSuccess, onError, cameraOptions);
 }
+
+var captureAudio = function () {
+    var onSuccess= function(result) {
+        console.log("Capture success: " + JSON.stringify(result));
+    }
+
+    var onError = function (msg) {
+        console.log("Capture failed: " + JSON.stringify(msg));
+    };
+
+    console.log('capture audio');
+
+    navigator.device.audiorecorder.recordAudio(onSuccess, onError, null, '#fff', '#000');
+}
