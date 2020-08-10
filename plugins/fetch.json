@@ -121,14 +121,6 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-plugin-qrscanner": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-qrscanner"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-add-swift-support": {
     "source": {
       "type": "registry",
@@ -149,6 +141,14 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-audio-recorder"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-qr-barcode-scanner": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-qr-barcode-scanner@^8.0.3"
     },
     "is_top_level": true,
     "variables": {}

@@ -55,10 +55,11 @@
       "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
       "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-qrscanner": {
+    "cordova-plugin-audio-recorder": {
       "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-audio-recorder": {
+    "cordova-plugin-qr-barcode-scanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.planing24.mobile"
     }
   },

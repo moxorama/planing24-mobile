@@ -41,11 +41,11 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"QRScanner\"><param name=\"android-package\" value=\"com.bitpay.cordova.qrscanner.QRScanner\" /></feature>",
+              "xml": "<feature name=\"AudioRecorderPlugin\"><param name=\"android-package\" value=\"com.outsystems.audiorecorder.AudioRecorderPlugin\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"AudioRecorderPlugin\"><param name=\"android-package\" value=\"com.outsystems.audiorecorder.AudioRecorderPlugin\" /></feature>",
+              "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
               "count": 1
             }
           ],
@@ -78,18 +78,6 @@
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" android:required=\"false\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-feature android:name=\"android.hardware.camera.front\" android:required=\"false\" />",
               "count": 1
             },
             {
@@ -148,6 +136,28 @@
           "/manifest/application": [
             {
               "xml": "<provider android:authorities=\"${applicationId}.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:clearTaskOnLaunch=\"true\" android:configChanges=\"orientation|keyboardHidden|screenSize\" android:exported=\"false\" android:name=\"com.google.zxing.client.android.CaptureActivity\" android:theme=\"@android:style/Theme.DeviceDefault.NoActionBar\" android:windowSoftInputMode=\"stateAlwaysHidden\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:label=\"Share\" android:name=\"com.google.zxing.client.android.encode.EncodeActivity\" />",
+              "count": 1
+            }
+          ],
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.FLASHLIGHT\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"true\" />",
               "count": 1
             }
           ]
@@ -249,10 +259,11 @@
       "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
       "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-qrscanner": {
+    "cordova-plugin-audio-recorder": {
       "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-audio-recorder": {
+    "cordova-plugin-qr-barcode-scanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
@@ -354,19 +365,19 @@
       ]
     },
     {
-      "id": "cordova-plugin-qrscanner.QRScanner",
-      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
-      "pluginId": "cordova-plugin-qrscanner",
-      "clobbers": [
-        "QRScanner"
-      ]
-    },
-    {
       "id": "cordova-plugin-audio-recorder.AudioRecorder",
       "file": "plugins/cordova-plugin-audio-recorder/www/AudioRecorder.js",
       "pluginId": "cordova-plugin-audio-recorder",
       "clobbers": [
         "navigator.device.audiorecorder"
+      ]
+    },
+    {
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "clobbers": [
+        "cordova.plugins.barcodeScanner"
       ]
     }
   ],
@@ -386,7 +397,7 @@
     "cordova-plugin-enable-multidex": "0.2.0",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "5.6.8",
-    "cordova-plugin-qrscanner": "3.0.1",
-    "cordova-plugin-audio-recorder": "1.1.0"
+    "cordova-plugin-audio-recorder": "1.1.0",
+    "cordova-plugin-qr-barcode-scanner": "8.0.3"
   }
 }

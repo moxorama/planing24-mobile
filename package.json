@@ -26,7 +26,7 @@
     "cordova-plugin-firebasex": "^10.1.1",
     "cordova-plugin-jsinjection": "git+https://github.com/amirhmoradi/cordova-plugin-jsinjection.git",
     "cordova-plugin-network-information": "^2.0.2",
-    "cordova-plugin-qrscanner": "^3.0.1",
+    "cordova-plugin-qr-barcode-scanner": "^8.0.3",
     "cordova-plugin-statusbar": "^2.4.3",
     "cordova-plugin-wkwebview-engine": "^1.2.1",
     "cordova-plugin-x-socialsharing": "^5.6.8",
@@ -58,8 +58,8 @@
         "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
         "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
       },
-      "cordova-plugin-qrscanner": {},
-      "cordova-plugin-audio-recorder": {}
+      "cordova-plugin-audio-recorder": {},
+      "cordova-plugin-qr-barcode-scanner": {}
     },
     "platforms": [
       "ios",

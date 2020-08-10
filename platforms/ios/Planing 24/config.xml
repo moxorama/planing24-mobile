@@ -52,9 +52,6 @@
         <param name="ios-package" value="SocialSharing" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="QRScanner">
-        <param name="ios-package" value="QRScanner" />
-    </feature>
     <name>Planing 24</name>
     <description>
       Самый простой планировщик для малого бизнеса
@@ -102,5 +99,8 @@
     <preference name="CameraUsesGeolocation" value="false" />
     <feature name="AudioRecorderPlugin">
         <param name="ios-package" value="AudioRecorderPlugin" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
     </feature>
 </widget>

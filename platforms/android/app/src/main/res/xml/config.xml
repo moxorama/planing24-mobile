@@ -29,11 +29,11 @@
     <feature name="SocialSharing">
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
     </feature>
-    <feature name="QRScanner">
-        <param name="android-package" value="com.bitpay.cordova.qrscanner.QRScanner" />
-    </feature>
     <feature name="AudioRecorderPlugin">
         <param name="android-package" value="com.outsystems.audiorecorder.AudioRecorderPlugin" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
     </feature>
     <feature name="RemoteInjection">
         <param name="android-package" value="com.truckmovers.cordova.RemoteInjectionPlugin" />
