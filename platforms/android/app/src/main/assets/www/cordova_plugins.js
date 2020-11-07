@@ -74,14 +74,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-firebasex.FirebasePlugin",
-      "file": "plugins/cordova-plugin-firebasex/www/firebase.js",
-      "pluginId": "cordova-plugin-firebasex",
-      "clobbers": [
-        "FirebasePlugin"
-      ]
-    },
-    {
       "id": "es6-promise-plugin.Promise",
       "file": "plugins/es6-promise-plugin/www/promise.js",
       "pluginId": "es6-promise-plugin",
@@ -110,6 +102,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.barcodeScanner"
       ]
+    },
+    {
+      "id": "cordova-plugin-firebasex.FirebasePlugin",
+      "file": "plugins/cordova-plugin-firebasex/www/firebase.js",
+      "pluginId": "cordova-plugin-firebasex",
+      "clobbers": [
+        "FirebasePlugin"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -118,17 +118,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-contacts-phonenumbers": "0.0.12",
     "cordova-plugin-remote-injection": "0.5.2",
     "cordova-plugin-network-information": "2.0.2",
-    "cordova-plugin-wkwebview-engine": "1.2.1",
     "cordova-plugin-jsinjection": "1.1.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-camera": "4.1.0",
-    "cordova-plugin-androidx": "2.0.0",
-    "cordova-plugin-androidx-adapter": "1.1.1",
-    "cordova-plugin-firebasex": "10.1.1",
     "cordova-plugin-enable-multidex": "0.2.0",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "5.6.8",
     "cordova-plugin-audio-recorder": "1.1.0",
-    "cordova-plugin-qr-barcode-scanner": "8.0.3"
+    "cordova-plugin-qr-barcode-scanner": "8.0.3",
+    "cordova-plugin-firebasex": "11.0.3"
   };
 });

@@ -10,7 +10,7 @@ var app = {
         app.receivedEvent('deviceready');
         
         // Here, we redirect to the web site.
-        var targetUrl = "http://netlify.ru/";
+        var targetUrl = "https://planing24.com/catalogue.aspx";
         window.location.replace(targetUrl);
     },
     // Note: This code is taken from the Cordova CLI template.

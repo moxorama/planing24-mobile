@@ -47,14 +47,6 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-plugin-wkwebview-engine": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-wkwebview-engine@>=1.0.0"
-    },
-    "is_top_level": false,
-    "variables": {}
-  },
   "cordova-plugin-statusbar": {
     "source": {
       "type": "registry",
@@ -67,14 +59,6 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-camera@4.1.0"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-firebasex": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-firebasex@^10.1.1"
     },
     "is_top_level": true,
     "variables": {}
@@ -152,5 +136,25 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-wkwebview-engine": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-wkwebview-engine"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-firebasex": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebasex"
+    },
+    "is_top_level": true,
+    "variables": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false"
+    }
   }
 }

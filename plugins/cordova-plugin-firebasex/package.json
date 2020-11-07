@@ -1,8 +1,8 @@
 {
   "_from": "cordova-plugin-firebasex",
-  "_id": "cordova-plugin-firebasex@10.1.1",
+  "_id": "cordova-plugin-firebasex@11.0.3",
   "_inBundle": false,
-  "_integrity": "sha512-h0knXIdWDFXq4ABqokYbP9eFB1x9RW9yXXyEn/RqKh+Ov49uM4ILfHClPIKMVYfor3O/j7cLBGAIBAAeEBQiDA==",
+  "_integrity": "sha512-UZUAvzaYSOw5egBThigaB9kxN6B7dwOu/N8Ue8KYbjBpQDn34oos6fGMILhrN3jpCyN9VpGWAjz3fl5X7qUImQ==",
   "_location": "/cordova-plugin-firebasex",
   "_phantomChildren": {
     "simple-plist": "1.1.0"
@@ -18,13 +18,13 @@
     "fetchSpec": "latest"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#DEV:/",
+    "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebasex/-/cordova-plugin-firebasex-10.1.1.tgz",
-  "_shasum": "0cd13a63adcca2d5aac34eccb8c4889081c5d332",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebasex/-/cordova-plugin-firebasex-11.0.3.tgz",
+  "_shasum": "01bc96d1e84e69159d7e8728ca7583d9197316d0",
   "_spec": "cordova-plugin-firebasex",
-  "_where": "/Users/Wizeman/Projects/Sansara/Planing24",
+  "_where": "/Users/Wizeman/Projects/Sansara/planing24-mobile",
   "author": {
     "name": "Dave Alden"
   },
@@ -71,5 +71,5 @@
     "version": "node ./bump-version.js && git add -A plugin.xml"
   },
   "types": "./types/index.d.ts",
-  "version": "10.1.1"
+  "version": "11.0.3"
 }

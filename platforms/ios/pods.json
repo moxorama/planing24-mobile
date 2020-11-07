@@ -14,43 +14,43 @@
     "libraries": {
         "Firebase/Core": {
             "name": "Firebase/Core",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "Firebase/Auth": {
             "name": "Firebase/Auth",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "Firebase/Messaging": {
             "name": "Firebase/Messaging",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "Firebase/Performance": {
             "name": "Firebase/Performance",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "Firebase/RemoteConfig": {
             "name": "Firebase/RemoteConfig",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "Firebase/InAppMessaging": {
             "name": "Firebase/InAppMessaging",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "FirebaseFirestore": {
             "name": "FirebaseFirestore",
             "git": "https://github.com/invertase/firestore-ios-sdk-frameworks.git",
-            "tag": "6.28.0",
+            "tag": "6.33.0",
             "count": 1
         },
         "Firebase/Crashlytics": {
             "name": "Firebase/Crashlytics",
-            "spec": "6.28.0",
+            "spec": "6.33.0",
             "count": 1
         },
         "GoogleSignIn": {
@@ -60,7 +60,7 @@
         },
         "GoogleTagManager": {
             "name": "GoogleTagManager",
-            "spec": "7.1.2",
+            "spec": "7.1.4",
             "count": 1
         }
     }

@@ -7,64 +7,61 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    "cordova-plugin-audio-recorder": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-browsersync-gen2": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-contacts-phonenumbers": {
       "CONTACTS_USAGE_DESCRIPTION": "This app needs contacts access",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-remote-injection": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-jsinjection": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-firebasex": {
-      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
-      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
-      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-enable-multidex": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-jsinjection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-qr-barcode-scanner": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-remote-injection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-x-socialsharing": {
       "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
       "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-audio-recorder": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-qr-barcode-scanner": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-androidx": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-androidx-adapter": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   }
 }

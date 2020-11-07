@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.planing24.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="CDVWebViewEngine">
+        <param name="ios-package" value="CDVWebViewEngine" />
+    </feature>
+    <feature name="LaunchScreen">
+        <param name="ios-package" value="CDVLaunchScreen" />
+    </feature>
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -19,37 +25,40 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="AudioRecorderPlugin">
+        <param name="ios-package" value="AudioRecorderPlugin" />
+    </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
     <feature name="ContactsPhoneNumbers">
         <param name="ios-package" value="CDVContactsPhoneNumbers" />
-    </feature>
-    <feature name="RemoteInjection">
-        <param name="ios-package" value="CDVRemoteInjectionPlugin" />
-        <param name="onload" value="true" />
     </feature>
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="CDVWKWebViewEngine">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
-    </feature>
     <feature name="JsInjection">
         <param name="ios-package" value="CDVJsInjection" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
+    </feature>
+    <feature name="RemoteInjection">
+        <param name="ios-package" value="CDVRemoteInjectionPlugin" />
         <param name="onload" value="true" />
     </feature>
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Camera">
-        <param name="ios-package" value="CDVCamera" />
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
     </feature>
     <feature name="FirebasePlugin">
         <param name="ios-package" value="FirebasePlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
         <param name="onload" value="true" />
     </feature>
     <name>Planing 24</name>
@@ -67,7 +76,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://netlify.ru" />
+    <allow-navigation href="*://planing24.com/*" />
     <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
         <string>need camera access to take pictures</string>
     </edit-config>
@@ -85,7 +94,7 @@
     <preference name="DisallowOverscroll" value="false" />
     <preference name="EnableViewportScale" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="MediaTypesRequiringUserActionForPlayback" value="none" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="SuppressesLongPressGesture" value="false" />
     <preference name="Suppresses3DTouchGesture" value="false" />
@@ -93,14 +102,9 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="CameraUsesGeolocation" value="false" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <preference name="CameraUsesGeolocation" value="false" />
-    <feature name="AudioRecorderPlugin">
-        <param name="ios-package" value="AudioRecorderPlugin" />
-    </feature>
-    <feature name="BarcodeScanner">
-        <param name="ios-package" value="CDVBarcodeScanner" />
-    </feature>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="WKWebViewOnly" value="true" />
 </widget>

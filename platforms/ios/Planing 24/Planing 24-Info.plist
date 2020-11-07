@@ -28,6 +28,8 @@
 	<string/>
 	<key>NSMainNibFile~ipad</key>
 	<string/>
+	<key>UILaunchStoryboardName</key>
+	<string>CDVLaunchScreen</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
@@ -47,7 +49,7 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>netlify.ru</key>
+			<key>planing24.com/*</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
@@ -62,11 +64,13 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This app requires photo library access to function properly.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>need camera access to take pictures</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires photo library access to function properly.</string>
+	<string>need photo library access to get pictures from there</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>need photo library access to save pictures there</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>This app requires microphone access to record audio.</string>
+	<string>need microphone access to record sounds</string>
 </dict>
 </plist>

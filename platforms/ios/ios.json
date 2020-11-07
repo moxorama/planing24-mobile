@@ -5,15 +5,71 @@
   },
   "config_munge": {
     "files": {
+      "*-Info.plist": {
+        "parents": {
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>need camera access to take pictures</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSPhotoLibraryUsageDescription": [
+            {
+              "xml": "<string>need photo library access to get pictures from there</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSPhotoLibraryAddUsageDescription": [
+            {
+              "xml": "<string>need photo library access to save pictures there</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>need microphone access to record sounds</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ],
+          "NSContactsUsageDescription": [
+            {
+              "xml": "<string>This app needs contacts access</string>",
+              "count": 1
+            }
+          ],
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>remote-notification</string></array>",
+              "count": 1
+            }
+          ]
+        }
+      },
       "config.xml": {
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"ContactsPhoneNumbers\"><param name=\"ios-package\" value=\"CDVContactsPhoneNumbers\" /></feature>",
+              "xml": "<feature name=\"AudioRecorderPlugin\"><param name=\"ios-package\" value=\"AudioRecorderPlugin\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"RemoteInjection\"><param name=\"ios-package\" value=\"CDVRemoteInjectionPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ContactsPhoneNumbers\"><param name=\"ios-package\" value=\"CDVContactsPhoneNumbers\" /></feature>",
               "count": 1
             },
             {
@@ -21,15 +77,15 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"CDVWKWebViewEngine\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"JsInjection\"><param name=\"ios-package\" value=\"CDVJsInjection\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"RemoteInjection\"><param name=\"ios-package\" value=\"CDVRemoteInjectionPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
@@ -45,68 +101,17 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"FirebasePlugin\"><param name=\"ios-package\" value=\"FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"AudioRecorderPlugin\"><param name=\"ios-package\" value=\"AudioRecorderPlugin\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+              "xml": "<feature name=\"FirebasePlugin\"><param name=\"ios-package\" value=\"FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ],
           "/*/feature[@name='NetworkStatus']": [
             {
               "xml": "<param name=\"onload\" value=\"true\" />",
-              "count": 1
-            }
-          ]
-        }
-      },
-      "*-Info.plist": {
-        "parents": {
-          "NSContactsUsageDescription": [
-            {
-              "xml": "<string>This app needs contacts access</string>",
-              "count": 1
-            }
-          ],
-          "UIBackgroundModes": [
-            {
-              "xml": "<array><string>remote-notification</string></array>",
-              "count": 1
-            }
-          ],
-          "NSPhotoLibraryAddUsageDescription": [
-            {
-              "xml": "<string>This app requires photo library access to function properly.</string>",
-              "count": 1
-            }
-          ],
-          "NSPhotoLibraryUsageDescription": [
-            {
-              "xml": "<string>This app requires photo library access to function properly.</string>",
-              "count": 1
-            }
-          ],
-          "NSCameraUsageDescription": [],
-          "NSMicrophoneUsageDescription": [
-            {
-              "xml": "<string>This app requires microphone access to record audio.</string>",
               "count": 1
             }
           ]
@@ -135,121 +140,66 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-audio-recorder": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-browsersync-gen2": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-contacts-phonenumbers": {
       "CONTACTS_USAGE_DESCRIPTION": "This app needs contacts access",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-remote-injection": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-jsinjection": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-androidx": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-androidx-adapter": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-firebasex": {
-      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
-      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
-      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-enable-multidex": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-jsinjection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-qr-barcode-scanner": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-remote-injection": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-x-socialsharing": {
       "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
       "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+      "PACKAGE_NAME": "com.planing24.mobile"
     },
-    "cordova-plugin-audio-recorder": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
-    },
-    "cordova-plugin-qr-barcode-scanner": {
-      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-      "id": "cordova-plugin-contacts-phonenumbers.contactsPhoneNumbers",
-      "file": "plugins/cordova-plugin-contacts-phonenumbers/www/contactsPhoneNumbers.js",
-      "pluginId": "cordova-plugin-contacts-phonenumbers",
+      "id": "cordova-plugin-audio-recorder.AudioRecorder",
+      "file": "plugins/cordova-plugin-audio-recorder/www/AudioRecorder.js",
+      "pluginId": "cordova-plugin-audio-recorder",
       "clobbers": [
-        "navigator.contactsPhoneNumbers"
-      ]
-    },
-    {
-      "id": "cordova-plugin-network-information.network",
-      "file": "plugins/cordova-plugin-network-information/www/network.js",
-      "pluginId": "cordova-plugin-network-information",
-      "clobbers": [
-        "navigator.connection",
-        "navigator.network.connection"
-      ]
-    },
-    {
-      "id": "cordova-plugin-network-information.Connection",
-      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-      "pluginId": "cordova-plugin-network-information",
-      "clobbers": [
-        "Connection"
-      ]
-    },
-    {
-      "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
-      "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
-      "pluginId": "cordova-plugin-wkwebview-engine",
-      "clobbers": [
-        "cordova.exec"
-      ]
-    },
-    {
-      "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
-      "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
-      "pluginId": "cordova-plugin-wkwebview-engine",
-      "clobbers": [
-        "window.WkWebView"
-      ]
-    },
-    {
-      "id": "cordova-plugin-jsinjection.jsinjection",
-      "file": "plugins/cordova-plugin-jsinjection/www/jsinjection.js",
-      "pluginId": "cordova-plugin-jsinjection",
-      "clobbers": [
-        "jsinjection"
-      ]
-    },
-    {
-      "id": "cordova-plugin-statusbar.statusbar",
-      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-      "pluginId": "cordova-plugin-statusbar",
-      "clobbers": [
-        "window.StatusBar"
+        "navigator.device.audiorecorder"
       ]
     },
     {
@@ -285,11 +235,52 @@
       ]
     },
     {
-      "id": "cordova-plugin-firebasex.FirebasePlugin",
-      "file": "plugins/cordova-plugin-firebasex/www/firebase.js",
-      "pluginId": "cordova-plugin-firebasex",
+      "id": "cordova-plugin-contacts-phonenumbers.contactsPhoneNumbers",
+      "file": "plugins/cordova-plugin-contacts-phonenumbers/www/contactsPhoneNumbers.js",
+      "pluginId": "cordova-plugin-contacts-phonenumbers",
       "clobbers": [
-        "FirebasePlugin"
+        "navigator.contactsPhoneNumbers"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-jsinjection.jsinjection",
+      "file": "plugins/cordova-plugin-jsinjection/www/jsinjection.js",
+      "pluginId": "cordova-plugin-jsinjection",
+      "clobbers": [
+        "jsinjection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "clobbers": [
+        "cordova.plugins.barcodeScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
       ]
     },
     {
@@ -307,39 +298,29 @@
       ]
     },
     {
-      "id": "cordova-plugin-audio-recorder.AudioRecorder",
-      "file": "plugins/cordova-plugin-audio-recorder/www/AudioRecorder.js",
-      "pluginId": "cordova-plugin-audio-recorder",
+      "id": "cordova-plugin-firebasex.FirebasePlugin",
+      "file": "plugins/cordova-plugin-firebasex/www/firebase.js",
+      "pluginId": "cordova-plugin-firebasex",
       "clobbers": [
-        "navigator.device.audiorecorder"
-      ]
-    },
-    {
-      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
-      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
-      "pluginId": "cordova-plugin-qr-barcode-scanner",
-      "clobbers": [
-        "cordova.plugins.barcodeScanner"
+        "FirebasePlugin"
       ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-audio-recorder": "1.1.0",
     "cordova-plugin-browsersync-gen2": "1.1.7",
-    "cordova-plugin-contacts-phonenumbers": "0.0.12",
-    "cordova-plugin-remote-injection": "0.5.2",
-    "cordova-plugin-network-information": "2.0.2",
-    "cordova-plugin-wkwebview-engine": "1.2.1",
-    "cordova-plugin-jsinjection": "1.1.0",
-    "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-camera": "4.1.0",
-    "cordova-plugin-androidx": "2.0.0",
-    "cordova-plugin-androidx-adapter": "1.1.1",
-    "cordova-plugin-firebasex": "10.1.1",
+    "cordova-plugin-contacts-phonenumbers": "0.0.12",
     "cordova-plugin-enable-multidex": "0.2.0",
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-network-information": "2.0.2",
+    "cordova-plugin-jsinjection": "1.1.0",
+    "cordova-plugin-qr-barcode-scanner": "8.0.3",
+    "cordova-plugin-remote-injection": "0.5.2",
+    "cordova-plugin-statusbar": "2.4.3",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "5.6.8",
-    "cordova-plugin-audio-recorder": "1.1.0",
-    "cordova-plugin-qr-barcode-scanner": "8.0.3"
+    "cordova-plugin-firebasex": "11.0.3"
   }
 }
