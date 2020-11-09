@@ -59,7 +59,7 @@ var shareDialog = function () {
 
 }
 
-var showCamera = function () {
+var showPhotoCamera = function () {
     var cameraOptions = {
         // Some common settings are 20, 50, and 100
         quality: 50,
@@ -83,7 +83,63 @@ var showCamera = function () {
     navigator.camera.getPicture(onSuccess, onError, cameraOptions);
 }
 
+var showVideoCamera = function () {
+    var cameraOptions = {
+        limit: 2
+    }
+
+    var uploadVideo = function (fileUrl) {
+        var uploadSuccess = function (r) {
+            console.log("Code = " + r.responseCode);
+            console.log("Response = " + r.response);
+            console.log("Sent = " + r.bytesSent);
+        }
+        
+        var uploadFail = function (error) {
+            alert("An error has occurred: Code = " + error.code);
+            console.log("upload error source " + error.source);
+            console.log("upload error target " + error.target);
+        }
+
+        console.log('upload video', fileUrl)
+        try {
+        var options = new FileUploadOptions();
+            options.fileKey = "file";
+            options.fileName = fileUrl.substr(fileUrl.lastIndexOf('/') + 1);
+            options.mimeType = "text/plain";
+            
+
+            var params = {};
+            params.value1 = "test";
+            params.value2 = "param";
+            
+            options.params = params;
+            
+            console.log('uploading', fileUrl)
+            var ft = new FileTransfer();
+            ft.upload(fileUrl, encodeURI("http://some.server.com/upload.php"), uploadSuccess, uploadFail, options);
+    
+        } catch(e) {
+            console.log(e)
+        }
+    }
+
+    var onSuccess = function (result) {
+        console.log("Capture success: " + JSON.stringify(result));
+        uploadVideo(result[0].localURL);
+    }
+
+    var onError = function (msg) {
+        console.log("Sharing failed with message: " + msg);
+    };
+
+    navigator.device.capture.captureVideo(
+        onSuccess, onError, cameraOptions
+    );
+}
+
 var captureAudio = function () {
+
     var onSuccess = function (result) {
         console.log("Capture success: " + JSON.stringify(result));
     }
@@ -95,6 +151,7 @@ var captureAudio = function () {
 
     navigator.device.audiorecorder.recordAudio(onSuccess, onError, null, '#fff', '#000');
 }
+
 
 var scanQrCode = function () {
     cordova.plugins.barcodeScanner.scan(
@@ -122,3 +179,5 @@ var scanQrCode = function () {
         }
     );
 }
+
+

@@ -51,6 +51,12 @@
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
       "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
@@ -61,6 +67,9 @@
       "PACKAGE_NAME": "com.planing24.mobile"
     },
     "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-file": {
       "PACKAGE_NAME": "com.planing24.mobile"
     }
   }
