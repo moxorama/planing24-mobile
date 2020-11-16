@@ -55,8 +55,6 @@ var shareDialog = function () {
     };
 
     window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
-
-
 }
 
 var showPhotoCamera = function () {
@@ -148,7 +146,6 @@ var captureAudio = function () {
         console.log("Capture failed: " + JSON.stringify(msg));
     };
 
-
     navigator.device.audiorecorder.recordAudio(onSuccess, onError, null, '#fff', '#000');
 }
 
@@ -179,5 +176,3 @@ var scanQrCode = function () {
         }
     );
 }
-
-
