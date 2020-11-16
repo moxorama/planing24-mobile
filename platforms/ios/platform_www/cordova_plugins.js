@@ -381,6 +381,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-firebasex": "11.0.3",
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-media-capture": "3.0.3",
-    "cordova-plugin-file-transfer": "2.0.0-dev"
+    "cordova-plugin-file-transfer": "2.0.0-dev",
+    "cordova-plugin-splashscreen": "6.0.0"
   };
 });

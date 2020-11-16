@@ -72,6 +72,9 @@
     },
     "cordova-plugin-file-transfer": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
