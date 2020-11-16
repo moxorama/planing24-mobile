@@ -20,6 +20,9 @@
 package com.planing24.mobile;
 
 import android.os.Bundle;
+import android.os.Build;
+import android.webkit.WebView;
+import android.webkit.CookieManager;
 import org.apache.cordova.*;
 
 public class MainActivity extends CordovaActivity
@@ -33,6 +36,13 @@ public class MainActivity extends CordovaActivity
         Bundle extras = getIntent().getExtras();
         if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
             moveTaskToBack(true);
+        }
+
+        // Allow third party cookies for Android Lollipop
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            WebView webView = (WebView)super.appView;
+            CookieManager cookieManager = CookieManager.getInstance();
+            cookieManager.setAcceptThirdPartyCookies(webView,true);
         }
 
         // Set by <content src="index.html" /> in config.xml

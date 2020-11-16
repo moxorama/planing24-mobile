@@ -1,7 +1,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-    this.bindEvents();
+        this.bindEvents();
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -10,7 +10,7 @@ var app = {
         app.receivedEvent('deviceready');
         
         // Here, we redirect to the web site.
-        var targetUrl = "https://planing24.com/catalogue.aspx";
+        var targetUrl = "http://cabinetman.ru/demo/index.html";
         window.location.replace(targetUrl);
     },
     // Note: This code is taken from the Cordova CLI template.
