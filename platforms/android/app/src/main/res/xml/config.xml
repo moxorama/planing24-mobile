@@ -50,6 +50,9 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="CookieManagementPlugin">
+        <param name="android-package" value="cordovaPluginCookieManager.CookieManagementPlugin" />
+    </feature>
     <feature name="RemoteInjection">
         <param name="android-package" value="com.truckmovers.cordova.RemoteInjectionPlugin" />
         <param name="onload" value="true" />
@@ -77,7 +80,4 @@
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="WKWebViewOnly" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <feature name="CookieManagementPlugin">
-        <param name="android-package" value="cordovaPluginCookieManager.CookieManagementPlugin" />
-    </feature>
 </widget>
