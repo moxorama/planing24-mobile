@@ -1,0 +1,42 @@
+{
+  "_from": "git+https://github.com/surgeventures/cordova-plugin-cookie-manager.git",
+  "_id": "cordova-plugin-cookie-manager@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-cookie-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/surgeventures/cordova-plugin-cookie-manager",
+    "rawSpec": "https://github.com/surgeventures/cordova-plugin-cookie-manager",
+    "saveSpec": "git+https://github.com/surgeventures/cordova-plugin-cookie-manager.git",
+    "fetchSpec": "https://github.com/surgeventures/cordova-plugin-cookie-manager.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/surgeventures/cordova-plugin-cookie-manager.git#052ea458d2dd44bb7a7969c602e12262b46e0fd7",
+  "_spec": "https://github.com/surgeventures/cordova-plugin-cookie-manager",
+  "_where": "/Users/Wizeman/Projects/Sansara/planing24-mobile",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/surgeventures/cordova-plugin-cookie-manager/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This plugins allows you to flush cookies in Android, moving them to persistent memory. Works on iOS but does nothing (calling \"flush\" wont provoke an error).",
+  "homepage": "https://github.com/surgeventures/cordova-plugin-cookie-manager#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cordova-plugin-cookie-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surgeventures/cordova-plugin-cookie-manager.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

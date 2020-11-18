@@ -75,6 +75,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-cookie-manager": {
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {

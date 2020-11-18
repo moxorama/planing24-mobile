@@ -119,6 +119,10 @@
             {
               "xml": "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"CookieManagementPlugin\"><param name=\"ios-package\" value=\"CookieManagementPlugin\" /></feature>",
+              "count": 1
             }
           ],
           "/*/feature[@name='NetworkStatus']": [
@@ -213,6 +217,9 @@
       "PACKAGE_NAME": "com.planing24.mobile"
     },
     "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-cookie-manager": {
       "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
@@ -579,6 +586,14 @@
       "clobbers": [
         "window.FileTransfer"
       ]
+    },
+    {
+      "id": "cordova-plugin-cookie-manager.CookieManagementPlugin",
+      "file": "plugins/cordova-plugin-cookie-manager/www/CookieManagementPlugin.js",
+      "pluginId": "cordova-plugin-cookie-manager",
+      "clobbers": [
+        "cordova.plugins.CookieManagementPlugin"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -600,6 +615,7 @@
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-media-capture": "3.0.3",
     "cordova-plugin-file-transfer": "2.0.0-dev",
-    "cordova-plugin-splashscreen": "6.0.0"
+    "cordova-plugin-splashscreen": "6.0.0",
+    "cordova-plugin-cookie-manager": "0.0.1"
   }
 }

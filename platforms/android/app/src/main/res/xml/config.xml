@@ -77,4 +77,7 @@
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="WKWebViewOnly" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <feature name="CookieManagementPlugin">
+        <param name="android-package" value="cordovaPluginCookieManager.CookieManagementPlugin" />
+    </feature>
 </widget>

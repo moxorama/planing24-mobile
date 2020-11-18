@@ -58,6 +58,7 @@
 		A43F931125DC490B98CAD8FA /* CDVCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA435CCD06A441685318333 /* CDVCapture.m */; };
 		14BF02ABFA034C858C8D2559 /* CDVCapture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47EF42DEBF844809AAA1516A /* CDVCapture.bundle */; };
 		AE63ECF729AD4D45BEB77A91 /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D813301CF44F2584ACC6B7 /* CDVFileTransfer.m */; };
+		35890E217C6347E98EE3F53D /* CookieManagementPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 326265C9CEB74EEC9E37AC1C /* CookieManagementPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		47EF42DEBF844809AAA1516A /* CDVCapture.bundle */ = {isa = PBXFileReference; name = "CDVCapture.bundle"; path = "CDVCapture.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
 		16D813301CF44F2584ACC6B7 /* CDVFileTransfer.m */ = {isa = PBXFileReference; name = "CDVFileTransfer.m"; path = "cordova-plugin-file-transfer/CDVFileTransfer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		A9C15BF36D6846D581A69B6C /* CDVFileTransfer.h */ = {isa = PBXFileReference; name = "CDVFileTransfer.h"; path = "cordova-plugin-file-transfer/CDVFileTransfer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		326265C9CEB74EEC9E37AC1C /* CookieManagementPlugin.m */ = {isa = PBXFileReference; name = "CookieManagementPlugin.m"; path = "cordova-plugin-cookie-manager/CookieManagementPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 				DB2087E8D13D466DA19266DF /* CDVCapture.h */,
 				16D813301CF44F2584ACC6B7 /* CDVFileTransfer.m */,
 				A9C15BF36D6846D581A69B6C /* CDVFileTransfer.h */,
+				326265C9CEB74EEC9E37AC1C /* CookieManagementPlugin.m */,
 			);
 			name = Plugins;
 			path = "Planing 24/Plugins";
@@ -610,6 +613,7 @@
 				7C96CDD1491247A4AC2280DA /* CDVAssetLibraryFilesystem.m in Sources */,
 				A43F931125DC490B98CAD8FA /* CDVCapture.m in Sources */,
 				AE63ECF729AD4D45BEB77A91 /* CDVFileTransfer.m in Sources */,
+				35890E217C6347E98EE3F53D /* CookieManagementPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

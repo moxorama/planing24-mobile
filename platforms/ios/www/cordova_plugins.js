@@ -361,6 +361,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.FileTransfer"
       ]
+    },
+    {
+      "id": "cordova-plugin-cookie-manager.CookieManagementPlugin",
+      "file": "plugins/cordova-plugin-cookie-manager/www/CookieManagementPlugin.js",
+      "pluginId": "cordova-plugin-cookie-manager",
+      "clobbers": [
+        "cordova.plugins.CookieManagementPlugin"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -382,6 +390,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-media-capture": "3.0.3",
     "cordova-plugin-file-transfer": "2.0.0-dev",
-    "cordova-plugin-splashscreen": "6.0.0"
+    "cordova-plugin-splashscreen": "6.0.0",
+    "cordova-plugin-cookie-manager": "0.0.1"
   };
 });
