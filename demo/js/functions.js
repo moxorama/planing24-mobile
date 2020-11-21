@@ -83,7 +83,7 @@ var showPhotoCamera = function () {
 
 var showVideoCamera = function () {
     var cameraOptions = {
-        limit: 2
+        limit: 1
     }
 
     var uploadVideo = function (fileUrl) {
@@ -101,7 +101,7 @@ var showVideoCamera = function () {
 
         console.log('upload video', fileUrl)
         try {
-        var options = new FileUploadOptions();
+            var options = new FileUploadOptions();
             options.fileKey = "file";
             options.fileName = fileUrl.substr(fileUrl.lastIndexOf('/') + 1);
             options.mimeType = "text/plain";
