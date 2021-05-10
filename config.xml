@@ -1,9 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.planing24.mobile" version="1.0.0" 
-    xmlns="http://www.w3.org/ns/widgets" 
-    xmlns:cdv="http://cordova.apache.org/ns/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android"
->
+<widget id="com.planing24.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Planing 24</name>
     <description>
       Самый простой планировщик для малого бизнеса
@@ -21,34 +17,34 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*://cabinetman.ru/*" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <!-- icon< src="icon.png" /> -->
-
+    <branch-config>
+        <branch-key value="key_live_fi4oNLUKEIoXHiHfEgj8GipevDcHZO0G" />
+        <uri-scheme value="planing24" />
+        <link-domain value="planing24.com" />
+    </branch-config>
     <feature name="CDVWKWebViewEngine">
-       <param name="ios-package" value="CDVWKWebViewEngine" />
+        <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="WKWebViewOnly" value="true" />
-
     <platform name="android">
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
     </platform>
     <platform name="ios">
-      <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-          <string>need camera access to take pictures</string>
-      </edit-config>
-      <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need photo library access to get pictures from there</string>
-      </edit-config>
-      <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need photo library access to save pictures there</string>
-      </edit-config>
-      <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need microphone access to record sounds</string>
-      </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>need camera access to take pictures</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+            <string>need photo library access to get pictures from there</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+            <string>need photo library access to save pictures there</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
+            <string>need microphone access to record sounds</string>
+        </edit-config>
     </platform>
     <preference name="StatusBarOverlaysWebView" value="false" />
 </widget>
-  

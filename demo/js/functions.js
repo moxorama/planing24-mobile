@@ -176,3 +176,9 @@ var scanQrCode = function () {
         }
     );
 }
+
+function handleOpenUrl(url) {
+    setTimeout(function() {
+        alert('url' + url);
+    }, 1500);
+}

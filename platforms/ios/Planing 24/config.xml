@@ -71,6 +71,9 @@
     <feature name="FileTransfer">
         <param name="ios-package" value="CDVFileTransfer" />
     </feature>
+    <feature name="CookieManagementPlugin">
+        <param name="ios-package" value="CookieManagementPlugin" />
+    </feature>
     <name>Planing 24</name>
     <description>
       Самый простой планировщик для малого бизнеса
@@ -117,7 +120,4 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="WKWebViewOnly" value="true" />
-    <feature name="CookieManagementPlugin">
-        <param name="ios-package" value="CookieManagementPlugin" />
-    </feature>
 </widget>

@@ -1,3 +1,7 @@
+window.handleOpenURL = function(url) {
+    alert(url);
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -8,8 +12,9 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        
+        alert(document.location.href);
         // Here, we redirect to the web site.
+ 
         var targetUrl = "http://cabinetman.ru/demo/index.html";
         window.location.replace(targetUrl);
     },
@@ -23,5 +28,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
     },
 };
+
+
 
 app.initialize();

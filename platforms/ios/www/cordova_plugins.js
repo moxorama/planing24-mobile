@@ -369,6 +369,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.CookieManagementPlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+      "file": "plugins/cordova-plugin-customurlscheme/www/ios/LaunchMyApp.js",
+      "pluginId": "cordova-plugin-customurlscheme",
+      "clobbers": [
+        "window.plugins.launchmyapp"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -391,6 +399,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-media-capture": "3.0.3",
     "cordova-plugin-file-transfer": "2.0.0-dev",
     "cordova-plugin-splashscreen": "6.0.0",
-    "cordova-plugin-cookie-manager": "0.0.1"
+    "cordova-plugin-cookie-manager": "0.0.1",
+    "cordova-plugin-customurlscheme": "5.0.2"
   };
 });

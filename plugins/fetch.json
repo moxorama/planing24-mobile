@@ -188,5 +188,15 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-customurlscheme": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-customurlscheme@^5.0.2"
+    },
+    "is_top_level": true,
+    "variables": {
+      "URL_SCHEME": "planing24"
+    }
   }
 }

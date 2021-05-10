@@ -78,6 +78,13 @@
     },
     "cordova-plugin-cookie-manager": {
       "PACKAGE_NAME": "com.planing24.mobile"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "planing24",
+      "ANDROID_SCHEME": " ",
+      "ANDROID_HOST": " ",
+      "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.planing24.mobile"
     }
   },
   "dependent_plugins": {
