@@ -53,6 +53,9 @@
     <feature name="CookieManagementPlugin">
         <param name="android-package" value="cordovaPluginCookieManager.CookieManagementPlugin" />
     </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
     <feature name="RemoteInjection">
         <param name="android-package" value="com.truckmovers.cordova.RemoteInjectionPlugin" />
         <param name="onload" value="true" />
@@ -73,6 +76,11 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="*://cabinetman.ru/*" />
+    <branch-config>
+        <branch-key value="key_live_fi4oNLUKEIoXHiHfEgj8GipevDcHZO0G" />
+        <uri-scheme value="planing24" />
+        <link-domain value="planing24.com" />
+    </branch-config>
     <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
         <application android:usesCleartextTraffic="true" />
     </edit-config>
@@ -80,7 +88,4 @@
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="WKWebViewOnly" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <feature name="LaunchMyApp">
-        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
-    </feature>
 </widget>
